@@ -8,13 +8,18 @@
         <version>3.1.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>uz.diyorbek</groupId>
     <artifactId>tasklist</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>tasklist</name>
     <description>tasklist</description>
+
     <properties>
         <java.version>17</java.version>
+        <mapstuct.version>1.5.5.Final</mapstuct.version>
+        <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
+        <jakarta-validation.version>3.0.2</jakarta-validation.version>
     </properties>
     <dependencies>
         <dependency>
@@ -29,6 +34,29 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstuct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>${mapstuct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>${jakarta-validation.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.postgresql</groupId>
