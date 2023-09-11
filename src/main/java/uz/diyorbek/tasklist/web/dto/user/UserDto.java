@@ -13,7 +13,7 @@ public class UserDto {
     @NotNull(message = "Id must be not null",groups = OnUpdate.class)
     private Long id;
 
-    @NotNull(message = "Name mus be not null",groups = {OnUpdate.class, OnCreate.class})
+    @NotNull(message = "Name must be not null",groups = {OnUpdate.class, OnCreate.class})
     @Length(max = 255, message = "Name length must be smaller than 255 symbols",groups = {OnCreate.class, OnUpdate.class})
     private String name;
 
